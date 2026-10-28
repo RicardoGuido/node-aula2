@@ -1,21 +1,22 @@
-const pet1 = {
-    nome: "Alfredo", 
+const pets = [
+    {
+
+  nome: "Alfredo", 
     tutor: "William", 
     idade: 5, 
     vacinado: true,
+    },
 
-};
-
-const pet2 = {
+    {
     nome: "Belinha",  
     tutor: "Ana Maria", 
     idade: 8, 
     vacinado: false,
-};
-
-const pet3 = {
-    nome: "Rex", 
+    },
+    {
+     nome: "Rex", 
     tutor: "Joana Queiroz", 
     idade: 2, 
     vacinado: true,
-};
+    },
+];
