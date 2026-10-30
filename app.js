@@ -8,4 +8,13 @@ app.get("/", (requisicao, resposta) => {resposta.send(pets);
     
 });
 
+app.get("/:nome"), (requisicao, resposta) => {
+    const nomeInformado = requisicao.params.nome.toLowerCase();
+    const pet = pets.find((infoPet) => infoPet.nome === nomeInformado);
+}
+
+if(pet === undefined){
+    resposta.status(404).send("Não existe o pet informado.");
+}
+
 app.listen(port, () => console.log(`Servidor rodando na porta ${port}`));
